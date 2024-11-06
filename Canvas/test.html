@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="300" style="border: 1px solid blue">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <script>
+        
+      // Get a reference to the canvas element
+      canvas = document.getElementById("canvas");
+      context = canvas.getContext("2d");
+      
+      context.beginPath();
+      context.arc(200, 100, 50, 0, 2 * Math.PI);
+      context.strokeStyle = "#0099b0";
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(200, 100);
+      context.lineTo(250, 150);
+      context.lineTo(250, 50);
+      context.stroke();
+
+      context.strokeStyle = "#ff8080";
+      context.strokeRect(100, 50, 100, 125);
+    </script>
+  </body>
+</html>

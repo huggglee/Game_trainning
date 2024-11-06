@@ -29,11 +29,10 @@ class Team {
 
     static rank(arr){
         arr.sort((a,b) => b.winPercentage()-a.winPercentage());
-		for(let i =0;i<arr.lenght;i++){
+		for(let i =0;i<arr.length;i++){
 			arr[i].ranking=i+1;
 		}
     }
-    
 }
 
 // const team1=new Team ("ABC",10,3,123,30);
