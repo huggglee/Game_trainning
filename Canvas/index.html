@@ -23,13 +23,13 @@
         // Get a reference to the canvas
         canvas = document.getElementById("canvas");
         context = canvas.getContext("2d");
-        draw();
-        // drawCircle();
+        // draw();
+        drawCircle();
         // draw();
         // drawCirclesWithoutBeginPath();
         // drawShapesWithoutBeginPath();
         // drawCircleWithoutStroke();
-        // canvas.addEventListener("click", drawCircle);
+        canvas.addEventListener("click", drawCircle);
       }
 
       function getRandomRGB() {
@@ -65,16 +65,15 @@
       
       function drawCirclesWithoutBeginPath() {
         context.arc(100, 75, 50, 0, 2 * Math.PI);
-        context.stroke();
 
         context.arc(200, 150, 50, 0, 2 * Math.PI);
         context.stroke();
       }
       function drawShapesWithoutBeginPath() {
         context.rect(20, 20, 50, 50);
-        context.stroke();
 
         context.arc(100, 75, 30, 0, 2 * Math.PI);
+        context.stroke();
       }
       function drawCircleWithoutStroke() {
         context.beginPath();
