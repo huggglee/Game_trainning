@@ -32,6 +32,7 @@
         const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
         const minutes = now.getMinutes() + seconds / 60;
         const hours = now.getHours() % 12 + minutes / 60;
+        // console.log(hours);
 
         // Clear canvas
         context.clearRect(0, 0, canvas.width, canvas.height);
@@ -52,7 +53,7 @@
         for (let num = 1; num <= 12; num++) {
           const angle = (num * Math.PI) / 6 - Math.PI / 2;
           const x = 400 + 85 * Math.cos(angle);
-          const y = 200 + 85 * Math.sin(angle);
+          const y = 200 + 85 ;
           context.fillText(num, x, y);
         }
 
